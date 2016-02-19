@@ -1,0 +1,116 @@
+// Colors
+
+$card-margin: 0.6em;
+$card-padding: 0.5em;
+$card-border-width: 1px;
+$card-border-radius: 2px;
+$card-color: #fff;
+$card-min-height: 150px;
+$card-transition: box-shadow .2s cubic-bezier(.4, 0, .2, 1);
+$card-box-shadow: 0 2px 4px -1px rgba(0,0,0,0.14),0 4px 5px 0 rgba(0,0,0,0.098),0 1px 10px 0 rgba(0,0,0,0.084);
+
+$card-title-shadow: 0 1px 3px rgba(0,0,0,0.6);
+
+$card-colors: (
+  blue:   (
+    background: rgb(31, 141, 214),
+    text: rgb(03, 194, 240)
+  ), purple: (
+    background: rgb(128, 88, 165),
+    text: rgb(200, 131, 255)
+  ), green:  (
+    background: rgb(94, 185, 94),
+    text: rgb(161, 240, 137)
+  ), red:    (
+    background: rgb(221, 81, 76),
+    text: rgb(236, 164, 154)
+  ), orange: (
+    background: rgb(243, 123, 29),
+    text: rgb(255, 190, 129)
+  ), yellow: (
+    background: rgb(250, 210, 50),
+    text: rgb(255, 240, 134)
+  )
+);
+
+// Functions
+
+@function card-background-color( $color ) {
+  @return map-get( map-get( $card-colors, $color ), background );
+}
+
+@function card-text-color( $color ) {
+  @return map-get( map-get( $card-colors, $color ), text );
+}
+
+// Mixins
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+// Styles
+
+.fancy-cards {
+  .fancy-card {
+    margin: $card-margin;
+    padding: $card-padding;
+    border: $card-border-width solid;
+    color: $card-color;
+    @include border-radius( $card-border-radius );
+    min-height: $card-min-height;
+    transition: $card-transition;
+    box-shadow: $card-box-shadow;
+
+    .fancy-card-title {
+      margin-top: 0;
+      text-shadow: $card-title-shadow;
+    }
+
+  }
+
+  .fancy-card.card-blue {
+    background: card-background-color( blue );
+    .fancy-card-text {
+      color: card-text-color( blue );
+    }
+  }
+
+  .fancy-card.card-purple {
+    background: card-background-color( purple );
+    .fancy-card-text {
+      color: card-text-color( purple );
+    }
+  }
+
+  .fancy-card.card-green {
+    background: card-background-color( green );
+    .fancy-card-text {
+      color: card-text-color( green );
+    }
+  }
+
+  .fancy-card.card-red {
+    background: card-background-color( red );
+    .fancy-card-text {
+      color: card-text-color( red );
+    }
+  }
+
+  .fancy-card.card-orange {
+    background: card-background-color( orange );
+    .fancy-card-text {
+      color: card-text-color( orange );
+    }
+  }
+
+  .fancy-card.card-yellow {
+    background: card-background-color( yellow );
+    .fancy-card-text {
+      color: card-text-color( yellow );
+    }
+  }
+}
