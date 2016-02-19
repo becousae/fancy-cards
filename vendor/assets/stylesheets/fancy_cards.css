@@ -13,27 +13,27 @@
   .fancy-cards .fancy-card .fancy-card-title {
     margin-top: 0;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); }
-.fancy-cards .fancy-card.card-blue {
+.fancy-cards .fancy-card.fancy-card-blue {
   background: #1f8dd6; }
-  .fancy-cards .fancy-card.card-blue .fancy-card-text {
+  .fancy-cards .fancy-card.fancy-card-blue .fancy-card-text {
     color: #03c2f0; }
-.fancy-cards .fancy-card.card-purple {
+.fancy-cards .fancy-card.fancy-card-purple {
   background: #8058a5; }
-  .fancy-cards .fancy-card.card-purple .fancy-card-text {
+  .fancy-cards .fancy-card.fancy-card-purple .fancy-card-text {
     color: #c883ff; }
-.fancy-cards .fancy-card.card-green {
+.fancy-cards .fancy-card.fancy-card-green {
   background: #5eb95e; }
-  .fancy-cards .fancy-card.card-green .fancy-card-text {
+  .fancy-cards .fancy-card.fancy-card-green .fancy-card-text {
     color: #a1f089; }
-.fancy-cards .fancy-card.card-red {
+.fancy-cards .fancy-card.fancy-card-red {
   background: #dd514c; }
-  .fancy-cards .fancy-card.card-red .fancy-card-text {
+  .fancy-cards .fancy-card.fancy-card-red .fancy-card-text {
     color: #eca49a; }
-.fancy-cards .fancy-card.card-orange {
+.fancy-cards .fancy-card.fancy-card-orange {
   background: #f37b1d; }
-  .fancy-cards .fancy-card.card-orange .fancy-card-text {
+  .fancy-cards .fancy-card.fancy-card-orange .fancy-card-text {
     color: #ffbe81; }
-.fancy-cards .fancy-card.card-yellow {
+.fancy-cards .fancy-card.fancy-card-yellow {
   background: #fad232; }
-  .fancy-cards .fancy-card.card-yellow .fancy-card-text {
+  .fancy-cards .fancy-card.fancy-card-yellow .fancy-card-text {
     color: #fff086; }
