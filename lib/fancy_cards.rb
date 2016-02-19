@@ -1,5 +1,6 @@
 require "fancy_cards/version"
 
 module FancyCards
-  # Your code goes here...
+  class Engine < ::Rails::Engine
+  end
 end
