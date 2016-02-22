@@ -1,39 +1,52 @@
-.fancy-cards .fancy-card {
-  margin: 0.6em;
-  padding: 0.5em;
-  border: 1px solid;
-  color: white;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  border-radius: 2px;
-  min-height: 150px;
-  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.14), 0 4px 5px 0 rgba(0, 0, 0, 0.098), 0 1px 10px 0 rgba(0, 0, 0, 0.084); }
-  .fancy-cards .fancy-card .fancy-card-title {
-    margin-top: 0;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); }
-.fancy-cards .fancy-card.fancy-card-blue {
-  background: #1f8dd6; }
-  .fancy-cards .fancy-card.fancy-card-blue .fancy-card-text {
-    color: #03c2f0; }
-.fancy-cards .fancy-card.fancy-card-purple {
-  background: #8058a5; }
-  .fancy-cards .fancy-card.fancy-card-purple .fancy-card-text {
-    color: #c883ff; }
-.fancy-cards .fancy-card.fancy-card-green {
-  background: #5eb95e; }
-  .fancy-cards .fancy-card.fancy-card-green .fancy-card-text {
-    color: #a1f089; }
-.fancy-cards .fancy-card.fancy-card-red {
-  background: #dd514c; }
-  .fancy-cards .fancy-card.fancy-card-red .fancy-card-text {
-    color: #eca49a; }
-.fancy-cards .fancy-card.fancy-card-orange {
-  background: #f37b1d; }
-  .fancy-cards .fancy-card.fancy-card-orange .fancy-card-text {
-    color: #ffbe81; }
-.fancy-cards .fancy-card.fancy-card-yellow {
-  background: #fad232; }
-  .fancy-cards .fancy-card.fancy-card-yellow .fancy-card-text {
-    color: #fff086; }
+/*
+  =require purecss/grids
+  =require purecss/grids-responsive
+*/
+.fancy-cards {
+  /* Pure-g settings */
+  letter-spacing: -.31em;
+  text-rendering: optimizespeed;
+  font-family: FreeSans,Arimo,"Droid Sans",Helvetica,Arial,sans-serif;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  display: -ms-flexbox;
+  -ms-flex-flow: row wrap; }
+  .fancy-cards .fancy-card {
+    margin: 0.6em;
+    padding: 0.5em;
+    border: 1px solid;
+    color: white;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    min-height: 150px;
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.14), 0 4px 5px 0 rgba(0, 0, 0, 0.098), 0 1px 10px 0 rgba(0, 0, 0, 0.084); }
+    .fancy-cards .fancy-card .fancy-card-title {
+      margin-top: 0;
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6); }
+  .fancy-cards .fancy-card.fancy-card-blue {
+    background: #1f8dd6; }
+    .fancy-cards .fancy-card.fancy-card-blue .fancy-card-text {
+      color: #03c2f0; }
+  .fancy-cards .fancy-card.fancy-card-purple {
+    background: #8058a5; }
+    .fancy-cards .fancy-card.fancy-card-purple .fancy-card-text {
+      color: #c883ff; }
+  .fancy-cards .fancy-card.fancy-card-green {
+    background: #5eb95e; }
+    .fancy-cards .fancy-card.fancy-card-green .fancy-card-text {
+      color: #a1f089; }
+  .fancy-cards .fancy-card.fancy-card-red {
+    background: #dd514c; }
+    .fancy-cards .fancy-card.fancy-card-red .fancy-card-text {
+      color: #eca49a; }
+  .fancy-cards .fancy-card.fancy-card-orange {
+    background: #f37b1d; }
+    .fancy-cards .fancy-card.fancy-card-orange .fancy-card-text {
+      color: #ffbe81; }
+  .fancy-cards .fancy-card.fancy-card-yellow {
+    background: #fad232; }
+    .fancy-cards .fancy-card.fancy-card-yellow .fancy-card-text {
+      color: #fff086; }

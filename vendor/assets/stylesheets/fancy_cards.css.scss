@@ -1,3 +1,8 @@
+/*
+  =require purecss/grids
+  =require purecss/grids-responsive
+*/
+
 // Colors
 
 $card-margin: 0.6em;
@@ -55,6 +60,15 @@ $card-colors: (
 // Styles
 
 .fancy-cards {
+  /* Pure-g settings */
+  letter-spacing: -.31em;
+  text-rendering: optimizespeed;
+  font-family: FreeSans,Arimo,"Droid Sans",Helvetica,Arial,sans-serif;
+            display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+            display: -ms-flexbox;
+      -ms-flex-flow: row wrap;
+
   .fancy-card {
     margin: $card-margin;
     padding: $card-padding;
